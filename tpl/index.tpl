@@ -84,7 +84,7 @@
                 
                     <% data.forEach(function(post){ %> 
                          <div class="game">      
-                         <a href="#/details/post.id/details_apply" style="text-decoration: none;color: #000;"><%= post.name %></a>
+                         <a href=<%= post.id %> style="text-decoration: none;color: #000;"><%= post.name %></a>
                         </div>
                     <% }) %>
                 
