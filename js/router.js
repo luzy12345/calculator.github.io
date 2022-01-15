@@ -9,7 +9,7 @@ function renderTemplate(domId,tplName,resourceType,resourceName){
     $.get(path,function(data){        
       console.log(data)
   
-      path = `/tpl/${tplName}.tpl`
+      path = `tpl/${tplName}.tpl`
   
   
       $.get(path, function(tpl){         
@@ -29,5 +29,5 @@ function renderTemplate(domId,tplName,resourceType,resourceName){
   // 本函数根据传入的参数决定是数据集合还是数据成员，并映射到磁盘上的文件夹及文件
   function  buildPath(resourceType,resourceName){
     // 字符串插值
-    return resourceName ? `/json/${resourceType}-${resourceName}.json` : `/json/${resourceType}.json`
-  }
+    return resourceName ? `json/${resourceType}-${resourceName}.json` : `json/${resourceType}.json`
+  } 
