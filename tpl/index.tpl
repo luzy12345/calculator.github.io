@@ -82,7 +82,7 @@
             <div class="box2" style="height: auto">
                 <h2 style="width: 100%;">计算器</h2>
                 
-                    <% data.forEach(function(post){ %> 
+                    <% calculator.forEach(function(post){ %> 
                          <div class="game">      
                          <a href=<%=#/details/post.id/details_calculator %> style="text-decoration: none;color: #000;"><%= post.name %></a>
                         </div>

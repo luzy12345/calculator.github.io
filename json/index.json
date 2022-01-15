@@ -1,14 +1,39 @@
-[
-    {
-        "id": "pf",
-        "name": "一次性收付计算器"
-    },
-    {
-        "id": "fa",
-        "name": "等额回收现值计算器"
-    },
-    {
-        "id": "fa",
-        "name": "等额支付终值计算器"
-    }
-]
+
+{
+    "apply":[
+        {
+            "font": "fa fa-home",
+            "id": "houseloan",
+            "name": "房贷"
+        },
+        {
+            "font": "fa fa-car",
+            "id": "carloan",
+            "name": "车贷"
+        },
+        {
+            "font": "fa fa-line-chart",
+            "id": "gupiao",
+            "name": "股票"
+        },
+        {
+            "font": "fa fa-money",
+            "id": "zhaiquan",
+            "name": "债券"
+        }
+    ],
+    "calculator":[
+        {
+            "id": "pf",
+            "name": "一次性收付计算器"
+        },
+        {
+            "id": "fa",
+            "name": "等额回收现值计算器"
+        },
+        {
+            "id": "fa",
+            "name": "等额支付终值计算器"
+        }
+    ]
+}
