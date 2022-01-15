@@ -13,7 +13,7 @@ function renderTemplate(domId,tplName,resourceType,resourceName){
             res = result;
         });
         path = `tpl/${tplName}.tpl`
-        
+        console.log(res)
         $.get(path, function(result){
         var html = ejs.compile(result)(res);
         $(domId).html(html);
