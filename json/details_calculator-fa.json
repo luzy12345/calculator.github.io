@@ -1,14 +1,14 @@
 {
-    "calculator_name": "一次性支付计算器",
-    "function1": "已知现值求终值",
-    "function2": "已知终值求现值",
-    "gongshi_html": "../form_html/PF.html",    
-    "function1_name": "一次性支付终值计算（复利终值计算）",
-    "function2_name": "一次性支付现值计算（复利现值计算）",
-    "function1_intro": "复利终值是指本金在约定的期限内获得利息后，将利息加入本金再计利息，逐期滚算到约定期末的本金之和。",
-    "function2_intro": "复利现值是指在计算复利的情况下，要达到未来某一特定的资金金额，现今必须投入的本金。",
-    "gongshi1": "../image/calculator1.1_gongshi.png",
-    "gongshi2": "../image/calculator1.2_gongshi.png",
+    "calculator_name": "等额支付终值计算器",
+    "function1": "已知年金求终值",
+    "function2": "已知终值求年金",
+    "gongshi_html": "#/calculator/fa/calculator",    
+    "function1_name": "等额多次支付终值计算(普通年金终值计算)",
+    "function2_name": "年偿债基金计算(已知终值求年金)",
+    "function1_intro": "普通年金终值：指一定时期内，每期期末等额收入或支出的本利和。也就是将每一期的金额，按复利换算到最后一期期末的终值，然后加总。",
+    "function2_intro": "年偿债基金：是指为了在约定的未来某一时点清偿某笔债务或积聚一定数额的资金（实际上等于年金终值F）而必须分次等额提取的存款准备金。",
+    "gongshi1": "../../image/calculator3.2_gongshi.png",
+    "gongshi2": "../../image/calculator3.1_gongshi.png",
 
     "parameter1_in":
     [
@@ -25,8 +25,8 @@
             "constraint": "0~double最大取值"
         },
         {
-            "chinese": "现值",
-            "english": "previous value",
+            "chinese": "年金",
+            "english": "annuity",
             "type": "double",
             "constraint": "0~double最大取值"
         }
@@ -64,8 +64,8 @@
     "parameter2_out":
     [
         {
-            "chinese": "现值",
-            "english": "previous value",
+            "chinese": "年金",
+            "english": "annuity",
             "type": "double",
             "constraint": "0~double最大取值"
         }

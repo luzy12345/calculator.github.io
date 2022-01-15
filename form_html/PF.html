@@ -2,8 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script src="../js/pf.js"></script>
-	<script src="../js/fp.js"></script>
+	<script src="../js/calculator.js"></script>
 	<link  rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link  rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
@@ -31,12 +30,12 @@
 					<br>
 					<input type="radio" name="calculate" value="fv" onchange="change()">现值
 					<br>
-					</form>
+					
 					<input type="text" name="pv" id="pv" value="pv" onfocus="fopv()" onfocusout="leavepv()"></br></br>
 					<input type="text" name="fv" id="fv"  value="fv" onfocus="fofv()" onfocusout="leavefv()"></br></br>
 					<input type="text" name="rate" id="rate"  value="rate" onfocus="forate()" onfocusout="leaverate()"></br>
 					<select name="rateselect" size="3" id="rateselect">
-						<option value="0.03">0.03</option>
+						<option value="0.03" selected="selected">0.03</option>
 						<option value="0.05">0.05</option>
 						<option value="0.1">0.1</option>
 						<option value="0.15">0.15</option>
@@ -51,6 +50,7 @@
 				<p id="fp"></p>
 			</div>
 		</div>
+
 		<script>
 			$("input:radio").click(function(){        
 				$("#pv").hide();
@@ -62,78 +62,6 @@
 					$("#rate").val($(this).val());
 			});
 		</script>
-		<script>
-			function fopv(){
-				var x=document.getElementById("pv");
-				x.value = ''
-			}
-			function fofv(){
-				var x=document.getElementById("fv");
-				x.value = ''
-			}
-			function loadrate(){
-				$("#rateselect").hide();
-			}
-			function forate(){
-				var x=document.getElementById("rate");
-				x.value = ''
-				$("#rateselect").show();
-			}
-			function fonper(){
-				var x=document.getElementById("nper");
-				x.value = ''
-			}
-			function leavepv(){
-				var x=document.getElementById("pv");
-				if(x.value == ''){
-					x.value = '请输入pv'
-				}
-				else if(!isNumeric(x.value)) {
-					txt = "";
-					x.value="你输入的不是数字";
-				}
-			
-			}
-			function leavefv(){
-				var x=document.getElementById("fv");
-				if(x.value == ''){
-					x.value = '请输入fv'
-				}
-				else if(!isNumeric(x.value)) {
-					txt = "";
-					x.value="你输入的不是数字";
-				}
-				
-			}
-			function leaverate(){
-				var x=document.getElementById("rate");
-				if(x.value == ''){
-					x.value = '请输入rate'
-				}
-				else if(!isNumeric(x.value)) {
-					txt = "";
-					x.value="你输入的不是数字";
-				}
-			}
-			function leavenper(){
-				var x=document.getElementById("nper");
-				if(x.value == ''){
-					x.value = '请输入nper'
-				}
-				else if(!isNumeric(x.value)) {
-					txt = "";
-					x.value="你输入的不是数字";
-				}
-				
-			}
-
-
-			function isNumeric(n) {
-				return !isNaN(parseFloat(n)) && isFinite(n);
-			}
-		</script>
-		
-
 
 		<div class="right">
 
