@@ -82,14 +82,12 @@
             <div class="box2" style="height: auto">
                 <h2 style="width: 100%;">计算器</h2>
                 <div class="game">
-                    <a href="#/details/pf/details_apply" style="text-decoration: none;color: #000;">一次性收付计算器</a>
+                    <% data.forEach(function(post){ %>        
+                         <a href="#/details/post.id/details_apply" style="text-decoration: none;color: #000;"><%= post.name %></a>
+                    <% }) %>
                 </div>
-                <div class="game">
-                    <a href="#/details/pa/details_apply" style="text-decoration: none;color: #000;">等额回收现值计算器</a>
-                </div>
-                <div class="game">
-                    <a href="#/details/fa/details_apply" style="text-decoration: none;color: #000;">等额支付终值计算器</a>
-                </div>
+                
+                
                 <a href="list_html/calculator.html" style="text-align: right;text-decoration: none;color: #000;">more</a> 
             </div>
             
