@@ -81,13 +81,15 @@
 
             <div class="box2" style="height: auto">
                 <h2 style="width: 100%;">计算器</h2>
-                <div class="game">
-                    <% data.forEach(function(post){ %>        
+                
+                    <% data.forEach(function(post){ %> 
+                         <div class="game">      
                          <a href="#/details/post.id/details_apply" style="text-decoration: none;color: #000;"><%= post.name %></a>
+                        </div>
                     <% }) %>
-                </div>
                 
                 
+
                 <a href="list_html/calculator.html" style="text-align: right;text-decoration: none;color: #000;">more</a> 
             </div>
             
